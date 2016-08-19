@@ -18,6 +18,7 @@ alias psr='ps aux | grep ruby'
 # Moving around
 alias cdb='cd -'
 alias cls='clear;ls'
+alias ..='cd ..'
 
 # Show human friendly numbers and colors
 alias df='df -h'
@@ -26,6 +27,7 @@ alias du='du -h -d 2'
 if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
   alias ls='ls --color=auto'
+  alias la='ls -a --color=auto'
 elif [[ $platform == 'darwin' ]]; then
   alias ll='ls -alGh'
   alias ls='ls -Gh'
@@ -39,8 +41,8 @@ TRAPHUP() {
   source $HOME/.aliases.zsh
 }
 
-alias ae='vim $HOME/dotfiles/aliases.zsh' #alias edit
-alias ar='source $HOME/dotfiles/aliases.zsh'  #alias reload
+alias ae='vim $HOME/.dotfiles/zsh/aliases.zsh' #alias edit
+alias ar='source $HOME/.dotfiles/zsh/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 
 # vim using
