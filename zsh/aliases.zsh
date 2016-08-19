@@ -39,8 +39,8 @@ TRAPHUP() {
   source $HOME/.aliases.zsh
 }
 
-alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
-alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
+alias ae='vim $HOME/dotfiles/aliases.zsh' #alias edit
+alias ar='source $HOME/dotfiles/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 
 # vim using
@@ -163,15 +163,6 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
 
-# Zeus
-alias zs='zeus server'
-alias zc='zeus console'
-alias zr='zeus rspec'
-alias zrc='zeus rails c'
-alias zrs='zeus rails s'
-alias zrdbm='zeus rake db:migrate'
-alias zrdbtp='zeus rake db:test:prepare'
-
 # Rspec
 alias rs='rspec spec'
 alias sr='spring rspec'
@@ -190,18 +181,10 @@ alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A
 alias hpr='hub pull-request'
 alias grb='git recent-branches'
 
-# Finder
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 alias dbtp='spring rake db:test:prepare'
 alias dbm='spring rake db:migrate'
 alias dbmr='spring rake db:migrate:redo'
 alias dbmd='spring rake db:migrate:down'
 alias dbmu='spring rake db:migrate:up'
-
-# Homebrew
-alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
-
-alias psql='/Applications/Postgres.app/Contents/Versions/9.5/bin/psql -p5432'
 
