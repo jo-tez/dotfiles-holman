@@ -190,3 +190,11 @@ alias dbmr='spring rake db:migrate:redo'
 alias dbmd='spring rake db:migrate:down'
 alias dbmu='spring rake db:migrate:up'
 
+# Apt aliases
+alias apd='sudo apt update'
+alias apg='sudo apt -y upgrade'
+alias apl='apt list --upgradable'
+
+# Various/custom
+alias enhance='function ne() { docker run --rm -v "$(pwd)/`dirname ${@:$#}`":/ne/input -it alexjc/neural-enhance ${@:1:$#-1} "input/`basename ${@:$#}`"; }; ne'
+alias enhance2='function ne() { docker run --rm -v "/mnt/volume-nyc1-01/":/ne/input -it alexjc/neural-enhance ${@:1:$#-1} "input/`basename ${@:$#}`"; }; ne'
