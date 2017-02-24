@@ -13,7 +13,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
-
+Plugin 'php.vim'
+" JSHint
+set runtimepath+=~/.vim/bundle/jshint2.vim/
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
