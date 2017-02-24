@@ -190,3 +190,9 @@ alias dbmr='spring rake db:migrate:redo'
 alias dbmd='spring rake db:migrate:down'
 alias dbmu='spring rake db:migrate:up'
 
+
+# Apt 
+alias apd='sudo apt update'
+alias apg='sudo apt -y upgrade'
+alias apl='apt list --upgradable'
+
