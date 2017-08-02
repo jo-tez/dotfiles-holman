@@ -58,6 +58,8 @@ battery_status() {
   if [[ $(sysctl -n hw.model) == *"Book"* ]]
   then
     $ZSH/bin/battery-status
+  else
+    export PROMPT=$'\nin $(directory_name) $(git_dirty)$(need_push)\n› '
   fi
 }
 
